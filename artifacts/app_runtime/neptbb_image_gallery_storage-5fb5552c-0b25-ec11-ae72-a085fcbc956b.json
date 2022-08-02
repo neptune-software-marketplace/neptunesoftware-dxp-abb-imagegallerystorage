@@ -1,0 +1,818 @@
+{
+	"id": "5fb5552c-0b25-ec11-ae72-a085fcbc956b",
+	"createdAt": "2022-02-04T15:51:01.966Z",
+	"updatedAt": "2022-08-02T08:47:37.636Z",
+	"createdBy": "luuk.wosten@neptune-software.com",
+	"changedBy": "kristin.eliassen@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "1",
+			"fieldName": "oShell",
+			"fieldParent": 0,
+			"fieldType": "sap.m.Shell",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "2",
+					"fieldName": "oApp",
+					"fieldParent": "1",
+					"fieldType": "sap.m.App",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "4",
+							"fieldName": "oPage",
+							"fieldParent": "2",
+							"fieldType": "sap.m.Page",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Manage Media",
+									"script": "",
+									"translation": [
+										{
+											"language": "NO",
+											"value": "Administrer medier"
+										}
+									]
+								},
+								{
+									"attribute": "showHeader",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "7022240d-4115-4de2-fe12-59f0e724f9c8",
+									"fieldName": "oHBox",
+									"fieldParent": "4",
+									"fieldType": "sap.m.HBox",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "justifyContent",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "alignItems",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										},
+										{
+											"attribute": "alignContent",
+											"grouping": "Properties",
+											"value": "Center",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "cb88794d-063b-4c46-bb60-3443c5f333cc",
+											"fieldName": "oVBox",
+											"fieldParent": "7022240d-4115-4de2-fe12-59f0e724f9c8",
+											"fieldType": "sap.m.VBox",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "width",
+													"grouping": "Properties",
+													"value": "100%",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "58183fde-059f-49a4-96de-ef322e783fc6",
+													"fieldName": "oButtonTakeorUploadPicture",
+													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "100%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Emphasized",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Take / Upload Image",
+															"script": "",
+															"translation": [
+																{
+																	"language": "NO",
+																	"value": "Ta / last opp bilde"
+																}
+															]
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://camera",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"fileElem = document.getElementById(\"file-input\");",
+																"fileElem.click();"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "e5a6e05c-3158-48fc-f533-8ce134a981c0",
+													"fieldName": "oFlexBoxCameraUpload",
+													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
+													"fieldType": "sap.m.FlexBox",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiLargeMarginBeginEnd",
+															"script": "",
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "8aba0516-f5fe-4ff0-d005-1f0a29a8f6db",
+															"fieldName": "oHTMLObjectCameraUpload",
+															"fieldParent": "e5a6e05c-3158-48fc-f533-8ce134a981c0",
+															"fieldType": "sap.ui.core.HTML",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "774decc6-c8e3-4e6f-a906-ca223ed44be4",
+													"fieldName": "oCarousel",
+													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
+													"fieldType": "sap.m.Carousel",
+													"description": "contains the images from your gallery",
+													"script": "",
+													"bindingValue": "Generic Array",
+													"bindingType": "h",
+													"bindingSource": "P9",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "styleClassMargin",
+															"grouping": "Properties",
+															"value": "sapUiSmallMargin",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "pageChanged",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"var currentPage = oCarousel.getActivePage();",
+																"var currentPagelastChar = currentPage.substr(currentPage.length - 1);",
+																""
+															],
+															"translation": []
+														}
+													],
+													"data": [
+														{
+															"fieldNo": "165414e6-c045-4dc2-966f-b25ab7ed5466",
+															"fieldName": "oImage",
+															"fieldParent": "774decc6-c8e3-4e6f-a906-ca223ed44be4",
+															"fieldType": "sap.m.Image",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"attribute": "width",
+																	"grouping": "Properties",
+																	"value": "75%",
+																	"script": "",
+																	"translation": []
+																},
+																{
+																	"attribute": "src",
+																	"grouping": "Properties",
+																	"value": "{base64data}",
+																	"script": "",
+																	"translation": []
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "0d9826ac-6881-4890-f625-4d0ae50f10c5",
+													"fieldName": "oButtonDeletePicture",
+													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "width",
+															"grouping": "Properties",
+															"value": "100%",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "visible",
+															"grouping": "Properties",
+															"value": "false",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Reject",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://delete",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"//deleteCurrentPicture",
+																"OpenoMessageBoxConfirmDelete();"
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "5",
+									"fieldName": "oFooter",
+									"fieldParent": "4",
+									"fieldType": "sap.m.Bar",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "setFooter",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "6",
+											"fieldName": "Left",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentLeft",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "f102f66f-f77a-4e45-b2aa-29ac5b29093f",
+													"fieldName": "oButtonRefresh",
+													"fieldParent": "6",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Emphasized",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Refresh",
+															"script": "",
+															"translation": [
+																{
+																	"language": "NO",
+																	"value": "Forfriske"
+																}
+															]
+														},
+														{
+															"attribute": "icon",
+															"grouping": "Properties",
+															"value": "sap-icon://refresh",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"// Call the GET API for your image gallery",
+																"",
+																"apioRestAPIGetMedia(); //To get all images in the database."
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "7",
+											"fieldName": "Middle",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentMiddle",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8",
+											"fieldName": "Right",
+											"fieldParent": "5",
+											"fieldType": "neptune.BarContent",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "position",
+													"grouping": "Parent",
+													"value": "ContentRight",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "5dce28df-1074-431a-a03c-356401e02fdc",
+													"fieldName": "oButtonSave",
+													"fieldParent": "8",
+													"fieldType": "sap.m.Button",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"attribute": "type",
+															"grouping": "Properties",
+															"value": "Accept",
+															"script": "",
+															"translation": []
+														},
+														{
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Save",
+															"script": "",
+															"translation": [
+																{
+																	"language": "NO",
+																	"value": "Lagre"
+																}
+															]
+														},
+														{
+															"attribute": "press",
+															"grouping": "Events",
+															"value": "Anonymous Function",
+															"script": [
+																"==OBJECT STRING==",
+																"// Call the PUT/POST API for saving images to your gallery",
+																"",
+																"",
+																"var images = modeloModelArrayImageStorage.getData()",
+																"",
+																"",
+																"var options = {",
+																"    data: {",
+																"        //Your table parameters ",
+																"    }",
+																"};",
+																"",
+																"apioRestAPIProcessSavingMedia(options); "
+															],
+															"translation": []
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "e001996d-0d3a-42f6-c941-5dbcd5495f22",
+					"fieldName": "oRestAPIDeleteMedia",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "sap.m.MessageToast.show(\"Saved!\");",
+							"script": "sap.m.MessageToast.show(\"Saved!\");",
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "55e1f1c5-6a30-4595-c103-5028cab448f1",
+					"fieldName": "oRestAPIGetMedia",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"description": "GET API to fetch all images in the Database ",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"var images = modeloModelArrayImageStorage.getData()",
+								"",
+								"",
+								"modeloCarousel.setData(images);",
+								"",
+								"",
+								"if (images.length > 0) {",
+								"    oButtonDeletePicture.setVisible(true);",
+								"} else {",
+								"    oButtonDeletePicture.setVisible(false);",
+								"}"
+							],
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "f23a5dfd-4c79-48bb-cc37-27b45fe5f815",
+					"fieldName": "oRestAPIProcessSavingMedia",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"description": "PUT API for saving to Database ",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "ajaxSuccess",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"sap.m.MessageToast.show(\"Deleted! Refreshing...\");",
+								"",
+								"//Call the GET API to refresh the content of the Carousel ",
+								"apioRestAPIGetMedia();"
+							],
+							"translation": []
+						}
+					],
+					"data": []
+				},
+				{
+					"fieldNo": "01bce13a-d9ab-46e1-a1db-b1d6094af59b",
+					"fieldName": "ImageCaptureLogic",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": [
+						"==OBJECT STRING==",
+						"sap.ui.getCore().attachInit(function (data) {",
+						"    oHTMLObjectCameraUpload.setContent('<input type=\"file\" accept=\"image/*\" id=\"file-input\"  style=\"display:none\">');",
+						"});",
+						"",
+						"// Capturing a new image",
+						"setTimeout(function () {",
+						"",
+						"    modeloModelArrayImageStorage.setData([])",
+						"",
+						"    const fileInput = oFlexBoxCameraUpload.getDomRef();",
+						"    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));",
+						"",
+						"}, 500);",
+						"",
+						"/**This function takes the current date.now() and",
+						" *  stores that as the image ID alongside the base64data",
+						" *  ",
+						" * */",
+						"function handleFileSelect(f) {",
+						"    var reader = new FileReader();",
+						"",
+						"    reader.onload = (function (theFile) {",
+						"        return function (e) {",
+						"            var binaryData = e.target.result;",
+						"            // Converting Binary Data to base 64",
+						"            var base64String = window.btoa(binaryData);",
+						"",
+						"            var fullBase64picture = \"data:image/png;base64,\" + base64String;",
+						"",
+						"            var imageToStore = {",
+						"                \"imageID\": Date.now(),",
+						"                \"base64data\": fullBase64picture",
+						"            };",
+						"",
+						"            var currentImages = modeloModelArrayImageStorage.getData();",
+						"            currentImages.push(imageToStore);",
+						"            modeloModelArrayImageStorage.setData(currentImages);",
+						"            modeloCarousel.setData(currentImages);",
+						"",
+						"            if (currentImages.length > 0) {",
+						"                oButtonDeletePicture.setVisible(true);",
+						"            } else {",
+						"                oButtonDeletePicture.setVisible(false);",
+						"            }",
+						"",
+						"            //console.log(modeloModelArrayImageStorage.getData());",
+						"",
+						"        };",
+						"    })(f);",
+						"    reader.readAsBinaryString(f);",
+						"",
+						"    setTimeout(function () {",
+						"",
+						"        oCarousel.next();",
+						"",
+						"    }, 500);",
+						"",
+						"}",
+						"",
+						"function deleteCurrentPicture() {",
+						"    var currentPage = oCarousel.getActivePage();",
+						"    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));",
+						"    ",
+						"",
+						"    var currentImages = modeloModelArrayImageStorage.getData();",
+						"",
+						"    currentImages.splice(currentPagelastChar, 1);",
+						"",
+						"    modeloModelArrayImageStorage.setData(currentImages);",
+						"",
+						"    modeloCarousel.setData(currentImages);",
+						"",
+						"    if (currentImages.length > 0) {",
+						"        oButtonDeletePicture.setVisible(true);",
+						"    } else {",
+						"        oButtonDeletePicture.setVisible(false);",
+						"    }",
+						"",
+						"    ",
+						"}"
+					],
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "1278de6e-4de9-4b9f-8904-7a62152ba413",
+					"fieldName": "oModelArrayImageStorage",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model.array",
+					"description": "Contains the images in  your gallery",
+					"script": "",
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				},
+				{
+					"fieldNo": "3aca8f17-fd13-4a73-f749-47cff6117d4c",
+					"fieldName": "oMessageBoxConfirmDelete",
+					"fieldParent": 99999,
+					"fieldType": "sap.m.MessageBox",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Delete",
+							"script": "",
+							"translation": [
+								{
+									"language": "NO",
+									"value": "Slett"
+								}
+							]
+						},
+						{
+							"attribute": "text",
+							"grouping": "Properties",
+							"value": "Delete Image?",
+							"script": "",
+							"translation": [
+								{
+									"language": "NO",
+									"value": "Vil du slette bildet?"
+								}
+							]
+						},
+						{
+							"attribute": "icon",
+							"grouping": "Properties",
+							"value": "WARNING",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "Button2",
+							"grouping": "Properties",
+							"value": "NO",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "Button1",
+							"grouping": "Properties",
+							"value": "YES",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "callback",
+							"grouping": "Events",
+							"value": "Anonymous Function",
+							"script": [
+								"==OBJECT STRING==",
+								"// Confirm Delete action",
+								"switch (oEvent) {",
+								"    case 'YES':",
+								"",
+								"    oApp.setBusy(true);",
+								"    //Get the current displayed image on the Carousel",
+								"    var currentPage = oCarousel.getActivePage();",
+								"    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));",
+								"    ",
+								"",
+								"    var currentImages = modeloModelArrayImageStorage.getData();",
+								"    var toDelete = currentImages[currentPagelastChar].imageID",
+								"",
+								"    //Add the delete API call",
+								"    var options = {",
+								"        data: {",
+								"            toDelete,",
+								"           ",
+								"        }",
+								"    };",
+								"",
+								"    apioRestAPIDeleteMedia(options);",
+								"}"
+							],
+							"translation": []
+						}
+					],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"ver": "22.8.2.1047",
+	"application": "neptbb_image_gallery_storage",
+	"title": "",
+	"description": "",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_fiori_3",
+	"ui5_version": "",
+	"ui5_language": null,
+	"cus_theme": "",
+	"css": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"apis": []
+}

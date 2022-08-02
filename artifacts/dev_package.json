@@ -1,0 +1,47 @@
+{
+	"id": "D108C8B9-3F12-ED11-BD6E-000D3AB1D9FF",
+	"createdAt": "2022-08-02T08:47:23.756Z",
+	"createdBy": "kristin.eliassen@neptune-software.com",
+	"git": {
+		"targetServers": [],
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-imagegallerystorage",
+		"testServers": []
+	},
+	"name": "neptunesoftware-dxp-abb-imagegallerystorage",
+	"description": null,
+	"ver": "22.8.2.848",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "5FB5552C-0B25-EC11-AE72-A085FCBC956B",
+			"ver": "22.8.2.1047",
+			"application": "neptbb_image_gallery_storage",
+			"title": "",
+			"description": ""
+		}
+	],
+	"api": [],
+	"odataMock": [],
+	"odataSource": [],
+	"dictionary": [],
+	"jsclass": [],
+	"jsscript_group": [],
+	"theme": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"wf_definition": [],
+	"department": [],
+	"script_scheduler": [],
+	"connector": []
+}
