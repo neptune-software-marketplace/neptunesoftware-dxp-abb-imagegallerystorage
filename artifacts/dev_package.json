@@ -1,5 +1,5 @@
 {
-	"id": "D108C8B9-3F12-ED11-BD6E-000D3AB1D9FF",
+	"id": "d108c8b9-3f12-ed11-bd6e-000d3ab1d9ff",
 	"createdAt": "2022-08-02T08:47:23.756Z",
 	"createdBy": "kristin.eliassen@neptune-software.com",
 	"git": {
@@ -13,16 +13,15 @@
 	"enableCICD": true,
 	"apps": [
 		{
-			"id": "5FB5552C-0B25-EC11-AE72-A085FCBC956B",
-			"ver": "22.8.2.1047",
+			"id": "5fb5552c-0b25-ec11-ae72-a085fcbc956b",
 			"application": "neptbb_image_gallery_storage",
 			"title": "",
 			"description": ""
 		}
 	],
 	"api": [],
-	"odataMock": [],
 	"odataSource": [],
+	"odataMock": [],
 	"dictionary": [],
 	"jsclass": [],
 	"jsscript_group": [],
@@ -40,8 +39,9 @@
 	"systems": [],
 	"doc": [],
 	"wf_notifications": [],
-	"wf_definition": [],
 	"department": [],
 	"script_scheduler": [],
-	"connector": []
+	"wf_definition": [],
+	"connector": [],
+	"events": []
 }

@@ -1,0 +1,13 @@
+// Call the PUT/POST API for saving images to your gallery
+
+
+var images = modeloModelArrayImageStorage.getData()
+
+
+var options = {
+    data: {
+        //Your table parameters 
+    }
+};
+
+apioRestAPIProcessSavingMedia(options); 

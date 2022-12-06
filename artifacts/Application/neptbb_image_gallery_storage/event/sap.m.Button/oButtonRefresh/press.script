@@ -1,0 +1,3 @@
+// Call the GET API for your image gallery
+
+apioRestAPIGetMedia(); //To get all images in the database.

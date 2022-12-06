@@ -1,0 +1,11 @@
+var images = modeloModelArrayImageStorage.getData()
+
+
+modeloCarousel.setData(images);
+
+
+if (images.length > 0) {
+    oButtonDeletePicture.setVisible(true);
+} else {
+    oButtonDeletePicture.setVisible(false);
+}

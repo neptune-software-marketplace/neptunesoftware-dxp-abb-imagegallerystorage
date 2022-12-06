@@ -1,0 +1,4 @@
+sap.m.MessageToast.show("Deleted! Refreshing...");
+
+//Call the GET API to refresh the content of the Carousel 
+apioRestAPIGetMedia();

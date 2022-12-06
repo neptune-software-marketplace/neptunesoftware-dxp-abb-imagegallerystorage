@@ -1,0 +1,80 @@
+sap.ui.getCore().attachInit(function (data) {
+    oHTMLObjectCameraUpload.setContent('<input type="file" accept="image/*" id="file-input"  style="display:none">');
+});
+
+// Capturing a new image
+setTimeout(function () {
+
+    modeloModelArrayImageStorage.setData([])
+
+    const fileInput = oFlexBoxCameraUpload.getDomRef();
+    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));
+
+}, 500);
+
+/**This function takes the current date.now() and
+ *  stores that as the image ID alongside the base64data
+ *  
+ * */
+function handleFileSelect(f) {
+    var reader = new FileReader();
+
+    reader.onload = (function (theFile) {
+        return function (e) {
+            var binaryData = e.target.result;
+            // Converting Binary Data to base 64
+            var base64String = window.btoa(binaryData);
+
+            var fullBase64picture = "data:image/png;base64," + base64String;
+
+            var imageToStore = {
+                "imageID": Date.now(),
+                "base64data": fullBase64picture
+            };
+
+            var currentImages = modeloModelArrayImageStorage.getData();
+            currentImages.push(imageToStore);
+            modeloModelArrayImageStorage.setData(currentImages);
+            modeloCarousel.setData(currentImages);
+
+            if (currentImages.length > 0) {
+                oButtonDeletePicture.setVisible(true);
+            } else {
+                oButtonDeletePicture.setVisible(false);
+            }
+
+            //console.log(modeloModelArrayImageStorage.getData());
+
+        };
+    })(f);
+    reader.readAsBinaryString(f);
+
+    setTimeout(function () {
+
+        oCarousel.next();
+
+    }, 500);
+
+}
+
+function deleteCurrentPicture() {
+    var currentPage = oCarousel.getActivePage();
+    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));
+    
+
+    var currentImages = modeloModelArrayImageStorage.getData();
+
+    currentImages.splice(currentPagelastChar, 1);
+
+    modeloModelArrayImageStorage.setData(currentImages);
+
+    modeloCarousel.setData(currentImages);
+
+    if (currentImages.length > 0) {
+        oButtonDeletePicture.setVisible(true);
+    } else {
+        oButtonDeletePicture.setVisible(false);
+    }
+
+    
+}

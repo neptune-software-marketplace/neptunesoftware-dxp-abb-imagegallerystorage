@@ -1,9 +1,7 @@
 {
 	"id": "5fb5552c-0b25-ec11-ae72-a085fcbc956b",
 	"createdAt": "2022-02-04T15:51:01.966Z",
-	"updatedAt": "2022-08-02T08:47:37.636Z",
 	"createdBy": "luuk.wosten@neptune-software.com",
-	"changedBy": "kristin.eliassen@neptune-software.com",
 	"objects": [
 		{
 			"fieldNo": "1",
@@ -11,6 +9,7 @@
 			"fieldParent": 0,
 			"fieldType": "sap.m.Shell",
 			"script": "",
+			"customComponent": false,
 			"request": [],
 			"response": [],
 			"attributes": [],
@@ -21,6 +20,7 @@
 					"fieldParent": "1",
 					"fieldType": "sap.m.App",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [],
@@ -31,6 +31,7 @@
 							"fieldParent": "2",
 							"fieldType": "sap.m.Page",
 							"script": "",
+							"customComponent": false,
 							"request": [],
 							"response": [],
 							"attributes": [
@@ -61,6 +62,7 @@
 									"fieldParent": "4",
 									"fieldType": "sap.m.HBox",
 									"script": "",
+									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -93,6 +95,7 @@
 											"fieldParent": "7022240d-4115-4de2-fe12-59f0e724f9c8",
 											"fieldType": "sap.m.VBox",
 											"script": "",
+											"customComponent": false,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -111,6 +114,7 @@
 													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
 													"fieldType": "sap.m.Button",
 													"script": "",
+													"customComponent": false,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -151,11 +155,7 @@
 															"attribute": "press",
 															"grouping": "Events",
 															"value": "Anonymous Function",
-															"script": [
-																"==OBJECT STRING==",
-																"fileElem = document.getElementById(\"file-input\");",
-																"fileElem.click();"
-															],
+															"script": "file://event/sap.m.Button/oButtonTakeorUploadPicture/press.script",
 															"translation": []
 														}
 													],
@@ -167,6 +167,7 @@
 													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
 													"fieldType": "sap.m.FlexBox",
 													"script": "",
+													"customComponent": false,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -185,6 +186,7 @@
 															"fieldParent": "e5a6e05c-3158-48fc-f533-8ce134a981c0",
 															"fieldType": "sap.ui.core.HTML",
 															"script": "",
+															"customComponent": false,
 															"request": [],
 															"response": [],
 															"attributes": [],
@@ -199,6 +201,7 @@
 													"fieldType": "sap.m.Carousel",
 													"description": "contains the images from your gallery",
 													"script": "",
+													"customComponent": false,
 													"bindingValue": "Generic Array",
 													"bindingType": "h",
 													"bindingSource": "P9",
@@ -216,12 +219,7 @@
 															"attribute": "pageChanged",
 															"grouping": "Events",
 															"value": "Anonymous Function",
-															"script": [
-																"==OBJECT STRING==",
-																"var currentPage = oCarousel.getActivePage();",
-																"var currentPagelastChar = currentPage.substr(currentPage.length - 1);",
-																""
-															],
+															"script": "file://event/sap.m.Carousel/oCarousel/pageChanged.script",
 															"translation": []
 														}
 													],
@@ -232,6 +230,7 @@
 															"fieldParent": "774decc6-c8e3-4e6f-a906-ca223ed44be4",
 															"fieldType": "sap.m.Image",
 															"script": "",
+															"customComponent": false,
 															"request": [],
 															"response": [],
 															"attributes": [
@@ -260,6 +259,7 @@
 													"fieldParent": "cb88794d-063b-4c46-bb60-3443c5f333cc",
 													"fieldType": "sap.m.Button",
 													"script": "",
+													"customComponent": false,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -295,11 +295,7 @@
 															"attribute": "press",
 															"grouping": "Events",
 															"value": "Anonymous Function",
-															"script": [
-																"==OBJECT STRING==",
-																"//deleteCurrentPicture",
-																"OpenoMessageBoxConfirmDelete();"
-															],
+															"script": "file://event/sap.m.Button/oButtonDeletePicture/press.script",
 															"translation": []
 														}
 													],
@@ -315,6 +311,7 @@
 									"fieldParent": "4",
 									"fieldType": "sap.m.Bar",
 									"script": "",
+									"customComponent": false,
 									"request": [],
 									"response": [],
 									"attributes": [
@@ -333,6 +330,7 @@
 											"fieldParent": "5",
 											"fieldType": "neptune.BarContent",
 											"script": "",
+											"customComponent": false,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -351,6 +349,7 @@
 													"fieldParent": "6",
 													"fieldType": "sap.m.Button",
 													"script": "",
+													"customComponent": false,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -384,12 +383,7 @@
 															"attribute": "press",
 															"grouping": "Events",
 															"value": "Anonymous Function",
-															"script": [
-																"==OBJECT STRING==",
-																"// Call the GET API for your image gallery",
-																"",
-																"apioRestAPIGetMedia(); //To get all images in the database."
-															],
+															"script": "file://event/sap.m.Button/oButtonRefresh/press.script",
 															"translation": []
 														}
 													],
@@ -403,6 +397,7 @@
 											"fieldParent": "5",
 											"fieldType": "neptune.BarContent",
 											"script": "",
+											"customComponent": false,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -422,6 +417,7 @@
 											"fieldParent": "5",
 											"fieldType": "neptune.BarContent",
 											"script": "",
+											"customComponent": false,
 											"request": [],
 											"response": [],
 											"attributes": [
@@ -440,6 +436,7 @@
 													"fieldParent": "8",
 													"fieldType": "sap.m.Button",
 													"script": "",
+													"customComponent": false,
 													"request": [],
 													"response": [],
 													"attributes": [
@@ -466,22 +463,7 @@
 															"attribute": "press",
 															"grouping": "Events",
 															"value": "Anonymous Function",
-															"script": [
-																"==OBJECT STRING==",
-																"// Call the PUT/POST API for saving images to your gallery",
-																"",
-																"",
-																"var images = modeloModelArrayImageStorage.getData()",
-																"",
-																"",
-																"var options = {",
-																"    data: {",
-																"        //Your table parameters ",
-																"    }",
-																"};",
-																"",
-																"apioRestAPIProcessSavingMedia(options); "
-															],
+															"script": "file://event/sap.m.Button/oButtonSave/press.script",
 															"translation": []
 														}
 													],
@@ -506,6 +488,7 @@
 					"fieldParent": 99999,
 					"fieldType": "neptune.restapi",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -526,6 +509,7 @@
 					"fieldType": "neptune.restapi",
 					"description": "GET API to fetch all images in the Database ",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -533,20 +517,7 @@
 							"attribute": "ajaxSuccess",
 							"grouping": "Events",
 							"value": "Anonymous Function",
-							"script": [
-								"==OBJECT STRING==",
-								"var images = modeloModelArrayImageStorage.getData()",
-								"",
-								"",
-								"modeloCarousel.setData(images);",
-								"",
-								"",
-								"if (images.length > 0) {",
-								"    oButtonDeletePicture.setVisible(true);",
-								"} else {",
-								"    oButtonDeletePicture.setVisible(false);",
-								"}"
-							],
+							"script": "file://event/neptune.restapi/oRestAPIGetMedia/ajaxSuccess.script",
 							"translation": []
 						}
 					],
@@ -559,6 +530,7 @@
 					"fieldType": "neptune.restapi",
 					"description": "PUT API for saving to Database ",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -566,13 +538,7 @@
 							"attribute": "ajaxSuccess",
 							"grouping": "Events",
 							"value": "Anonymous Function",
-							"script": [
-								"==OBJECT STRING==",
-								"sap.m.MessageToast.show(\"Deleted! Refreshing...\");",
-								"",
-								"//Call the GET API to refresh the content of the Carousel ",
-								"apioRestAPIGetMedia();"
-							],
+							"script": "file://event/neptune.restapi/oRestAPIProcessSavingMedia/ajaxSuccess.script",
 							"translation": []
 						}
 					],
@@ -583,89 +549,8 @@
 					"fieldName": "ImageCaptureLogic",
 					"fieldParent": 99999,
 					"fieldType": "neptune.Script",
-					"script": [
-						"==OBJECT STRING==",
-						"sap.ui.getCore().attachInit(function (data) {",
-						"    oHTMLObjectCameraUpload.setContent('<input type=\"file\" accept=\"image/*\" id=\"file-input\"  style=\"display:none\">');",
-						"});",
-						"",
-						"// Capturing a new image",
-						"setTimeout(function () {",
-						"",
-						"    modeloModelArrayImageStorage.setData([])",
-						"",
-						"    const fileInput = oFlexBoxCameraUpload.getDomRef();",
-						"    fileInput.addEventListener('change', (e) => handleFileSelect(e.target.files[0]));",
-						"",
-						"}, 500);",
-						"",
-						"/**This function takes the current date.now() and",
-						" *  stores that as the image ID alongside the base64data",
-						" *  ",
-						" * */",
-						"function handleFileSelect(f) {",
-						"    var reader = new FileReader();",
-						"",
-						"    reader.onload = (function (theFile) {",
-						"        return function (e) {",
-						"            var binaryData = e.target.result;",
-						"            // Converting Binary Data to base 64",
-						"            var base64String = window.btoa(binaryData);",
-						"",
-						"            var fullBase64picture = \"data:image/png;base64,\" + base64String;",
-						"",
-						"            var imageToStore = {",
-						"                \"imageID\": Date.now(),",
-						"                \"base64data\": fullBase64picture",
-						"            };",
-						"",
-						"            var currentImages = modeloModelArrayImageStorage.getData();",
-						"            currentImages.push(imageToStore);",
-						"            modeloModelArrayImageStorage.setData(currentImages);",
-						"            modeloCarousel.setData(currentImages);",
-						"",
-						"            if (currentImages.length > 0) {",
-						"                oButtonDeletePicture.setVisible(true);",
-						"            } else {",
-						"                oButtonDeletePicture.setVisible(false);",
-						"            }",
-						"",
-						"            //console.log(modeloModelArrayImageStorage.getData());",
-						"",
-						"        };",
-						"    })(f);",
-						"    reader.readAsBinaryString(f);",
-						"",
-						"    setTimeout(function () {",
-						"",
-						"        oCarousel.next();",
-						"",
-						"    }, 500);",
-						"",
-						"}",
-						"",
-						"function deleteCurrentPicture() {",
-						"    var currentPage = oCarousel.getActivePage();",
-						"    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));",
-						"    ",
-						"",
-						"    var currentImages = modeloModelArrayImageStorage.getData();",
-						"",
-						"    currentImages.splice(currentPagelastChar, 1);",
-						"",
-						"    modeloModelArrayImageStorage.setData(currentImages);",
-						"",
-						"    modeloCarousel.setData(currentImages);",
-						"",
-						"    if (currentImages.length > 0) {",
-						"        oButtonDeletePicture.setVisible(true);",
-						"    } else {",
-						"        oButtonDeletePicture.setVisible(false);",
-						"    }",
-						"",
-						"    ",
-						"}"
-					],
+					"script": "file://script/neptune.Script/ImageCaptureLogic.script",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [],
@@ -678,6 +563,7 @@
 					"fieldType": "neptune.model.array",
 					"description": "Contains the images in  your gallery",
 					"script": "",
+					"customComponent": false,
 					"bindingValue": "Generic Array",
 					"bindingType": "h",
 					"bindingSource": "P9",
@@ -692,6 +578,7 @@
 					"fieldParent": 99999,
 					"fieldType": "sap.m.MessageBox",
 					"script": "",
+					"customComponent": false,
 					"request": [],
 					"response": [],
 					"attributes": [
@@ -744,35 +631,22 @@
 							"attribute": "callback",
 							"grouping": "Events",
 							"value": "Anonymous Function",
-							"script": [
-								"==OBJECT STRING==",
-								"// Confirm Delete action",
-								"switch (oEvent) {",
-								"    case 'YES':",
-								"",
-								"    oApp.setBusy(true);",
-								"    //Get the current displayed image on the Carousel",
-								"    var currentPage = oCarousel.getActivePage();",
-								"    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));",
-								"    ",
-								"",
-								"    var currentImages = modeloModelArrayImageStorage.getData();",
-								"    var toDelete = currentImages[currentPagelastChar].imageID",
-								"",
-								"    //Add the delete API call",
-								"    var options = {",
-								"        data: {",
-								"            toDelete,",
-								"           ",
-								"        }",
-								"    };",
-								"",
-								"    apioRestAPIDeleteMedia(options);",
-								"}"
-							],
+							"script": "file://event/sap.m.MessageBox/oMessageBoxConfirmDelete/callback.script",
 							"translation": []
 						}
 					],
+					"data": []
+				},
+				{
+					"fieldNo": "0d6cd9f7-0dca-4083-d82f-3450fc2e7829",
+					"fieldName": "README",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/README.script",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
 					"data": []
 				}
 			]
@@ -782,7 +656,8 @@
 			"data": []
 		}
 	],
-	"ver": "22.8.2.1047",
+	"componentInterface": [],
+	"ver": "22.12.6.1756",
 	"application": "neptbb_image_gallery_storage",
 	"title": "",
 	"description": "",
@@ -804,6 +679,7 @@
 	"ui5_theme": "sap_fiori_3",
 	"ui5_version": "",
 	"ui5_language": null,
+	"ui5_url": "",
 	"cus_theme": "",
 	"css": "",
 	"header": "",
@@ -814,5 +690,9 @@
 	"libHighmap": false,
 	"publicAccess": false,
 	"ui5_bootstrap": false,
-	"apis": []
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"apis": [],
+	"package": "d108c8b9-3f12-ed11-bd6e-000d3ab1d9ff"
 }

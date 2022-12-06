@@ -1,0 +1,23 @@
+// Confirm Delete action
+switch (oEvent) {
+    case 'YES':
+
+    oApp.setBusy(true);
+    //Get the current displayed image on the Carousel
+    var currentPage = oCarousel.getActivePage();
+    var currentPagelastChar = parseInt(currentPage.substr(currentPage.length - 1));
+    
+
+    var currentImages = modeloModelArrayImageStorage.getData();
+    var toDelete = currentImages[currentPagelastChar].imageID
+
+    //Add the delete API call
+    var options = {
+        data: {
+            toDelete,
+           
+        }
+    };
+    //Make sure the api call happens or else the app will be set to busy!
+    apioRestAPIDeleteMedia(options);
+}
