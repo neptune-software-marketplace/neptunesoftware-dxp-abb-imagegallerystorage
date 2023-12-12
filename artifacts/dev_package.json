@@ -9,14 +9,17 @@
 	},
 	"name": "neptunesoftware-dxp-abb-imagegallerystorage",
 	"description": null,
-	"ver": "22.8.2.848",
+	"ver": "23.12.12.959",
 	"enableCICD": true,
 	"apps": [
 		{
 			"id": "5fb5552c-0b25-ec11-ae72-a085fcbc956b",
 			"application": "neptbb_image_gallery_storage",
 			"title": "",
-			"description": ""
+			"description": "",
+			"package": {
+				"id": "d108c8b9-3f12-ed11-bd6e-000d3ab1d9ff"
+			}
 		}
 	],
 	"api": [],
@@ -43,5 +46,8 @@
 	"script_scheduler": [],
 	"wf_definition": [],
 	"connector": [],
-	"events": []
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
 }
